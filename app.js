@@ -104,17 +104,17 @@ const playButton = document.getElementById("playButton");
 foodButton.addEventListener("click", (event) => {
   petUpdate.innerHTML = ` wants scooby snacks... FEED ME!`;
   newDog.eat();
-  newDog.checkHunger();
+  
 });
 
 drinkButton.addEventListener("click", (event) => {
   newDog.drink();
-  newDog.checkThirst();
+  
 });
 
 playButton.addEventListener("click", (event) => {
   newDog.play();
-  newDog.checkHappy();
+  
 });
 
 
@@ -140,23 +140,9 @@ get happy(){
 }
 
 eat(){
-  this._hunger-=10;
-  this._thirst+=5;
-  this._happy+=5
-}
-
-drink(){
-  this._thirst-=10;
-  this._hunger+=5;
-  this._happy+=5;
-}
-play(){
-  this._happy-=10;
-  this._hunger+=5;
-  this._thirst=+5;
-}
-
-checkHunger(){
+    this._hunger-=10;
+    this._thirst+=5;
+    this._happy+=5
   if (this._hunger >= 90) {
     // Link to DOM element ID here
     petUpdate.textContent = `${this._name} wants scooby snacks... FEED ME!`;
@@ -169,8 +155,10 @@ checkHunger(){
     petUpdate.textContent = (`${this._hunger} hunger level`) ;
   };
 };
-
-checkThirst(){
+drink(){
+    this._thirst-=10;
+    this._hunger+=5;
+    this._happy+=5;
   if (this._thirst >= 90) {
     // Link to DOM element ID here
     petUpdate.textContent = (`${this._name} is SO thirsty, drinkies please!`);
@@ -182,8 +170,10 @@ checkThirst(){
     petUpdate.textContent = (`${this._thirst} thirst level`) ;
   };
 };
-
-checkHappy(){
+play(){
+  this._happy-=10;
+  this._hunger+=5;
+  this._thirst=+5;
   if (this._happy >= 90) {
     // Link to DOM element ID here
     petUpdate.textContent = (`${this._name} is bored. I need to play!`);
@@ -195,8 +185,5 @@ checkHappy(){
     petUpdate.textContent = (`${this._happy} play level`) ;
   };
 };
-
 };
-
-
 const newDog = new Animal("Layla");
