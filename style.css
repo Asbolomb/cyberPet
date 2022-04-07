@@ -6,13 +6,29 @@ body{
 }
 
 header{
+    display: flex;
     font-size: 50px;
     font-family:'Courier New', Courier, monospace;
-    background-color: aqua;   
+    background-color: rgb(181, 49, 243); 
+    align-items: center;  
+    border-radius: 100%;
+    width: 50%;
+    padding-left: 80px;
+    max-height: 150px;
+   
 }
     
 .petName{
-    font-size: 40px;
+    display: flex;
+    font-size: 30px;
+    background-color: rgb(240, 238, 238);
+    align-items: center;
+    border-style: double;
+    border-radius: 10%;
+    max-height: 30px;
+    padding:15px;
+    margin: 10px;
+    
 
 }
 
@@ -30,9 +46,10 @@ header{
     height: 500px; 
 }
 
-#stats{
+.stats{
+    width: 60%;
     display: flex;
-    
+    justify-content: space-between;
 }
 
 .petButtons{
