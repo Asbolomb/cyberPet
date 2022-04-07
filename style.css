@@ -11,9 +11,7 @@ header{
     font-family:'Courier New', Courier, monospace;
     background-color: rgb(181, 49, 243); 
     align-items: center;  
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(30, 30, 182);
+    border: solid 2px rgb(108, 32, 248);
     border-radius: 100%;
     width: 50%;
     padding-left: 80px;
@@ -68,7 +66,5 @@ header{
     font-weight: 1000;
     border-bottom: solid 2px ;
     max-height: 40px;
-    
-
 }
 
