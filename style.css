@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    font-size: 60px;
+    font-family:'Courier New', Courier, monospace}
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 10px;
+    border-style: solid;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    width: 500px;
+    height: 500px;
+  
+}
