@@ -11,6 +11,9 @@ header{
     font-family:'Courier New', Courier, monospace;
     background-color: rgb(181, 49, 243); 
     align-items: center;  
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(30, 30, 182);
     border-radius: 100%;
     width: 50%;
     padding-left: 80px;
@@ -20,7 +23,9 @@ header{
     
 .petName{
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bolder;
     background-color: rgb(240, 238, 238);
     align-items: center;
     border-style: double;
@@ -57,5 +62,13 @@ header{
    transform: scale(1.5);
    background-color: rgb(255, 255, 255);
    border-radius: 40%;
+}
+#update{
+    font-size: 20px;
+    font-weight: 1000;
+    border-bottom: solid 2px ;
+    max-height: 40px;
+    
+
 }
 
